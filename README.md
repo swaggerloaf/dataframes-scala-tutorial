@@ -34,7 +34,7 @@ to stdout
 df.show()
 ```
 
-```scala
+```java
   import spark.implicits._
   df.printSchema()
 
