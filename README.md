@@ -39,6 +39,11 @@ df.show()
   df.printSchema()
 
   df.select("name").show()
+  df.select($"name", $"age" + 1).show()
+  df.filter($"age" > 21).show()
+  
+  // Register the DataFrame as a SQL temporary view
+  df.createOrReplaceTempView("people")
 ```
 <code></code>
 <code></code>
