@@ -11,32 +11,35 @@ You'll need these various parts of code to get it working:
 import spark.implicits._
 df.printSchema()
 ```
+
+
 df.select("name").show()
-<code>
+
+```scala
 dbutils.fs.put("/tmp/people.json", """
 {"name":"Michael"}
 {"name":"Andy", "age":30}
 {"name":"Justin", "age":19}
 """, true)
-</code>
+```
 
 Create a dataframe based on json file
 
-<code>
+```scala
 val df = spark.read.json("/tmp/people.json")
-</code>
+```
 
 to stdout
+```scala
+df.show()
+```
 
-<code>df.show()</code>
-
-
-<code>
+```scala
   import spark.implicits._
   df.printSchema()
 
   df.select("name").show()
-</code>
+```
 <code></code>
 <code></code>
 <code></code>
