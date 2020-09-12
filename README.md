@@ -2,9 +2,8 @@
 
 ## Task: 
 
-Open the `TwitterFeed.js`. The `Tweet` component is the only one you'll need to work on.
+Open `main.scala`
 
-You'll need these various parts of code to get it working:
 
 ```scala
 // comment
@@ -45,10 +44,3 @@ df.show()
   // Register the DataFrame as a SQL temporary view
   df.createOrReplaceTempView("people")
 ```
-<code></code>
-<code></code>
-<code></code>
-<code></code>
-<code></code>
-<code></code>
-<code></code>
